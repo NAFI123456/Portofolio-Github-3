@@ -75,7 +75,7 @@ data_interpret = pd.DataFrame({
                      })
 
 st.markdown(
-    "<h4 style='text-align: center;'>Upcoming Predicted Dataset for Interpretation</h4>", 
+    "<h4 style='text-align: center;'>Data Input for Interpretation</h4>", 
     unsafe_allow_html=True
 )
 st.table(data_interpret.reset_index(drop=True))
