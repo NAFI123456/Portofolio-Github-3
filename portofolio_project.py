@@ -114,5 +114,5 @@ if button:
     proba_churn = pred_proba[0][1]
 
     st.markdown(f"<h4 style='text-align: center;'>Predicted: {label_pred}</h4>", unsafe_allow_html=True)
-    st.markdown(f"<p style='text-align: center;'>Customer Loyalty Rate: {proba_no_churn:.0%}</p>", unsafe_allow_html=True)
-    st.markdown(f"<p style='text-align: center;'>Customer Churn Rate: {proba_churn:.0%}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='text-align: center;'>{proba_no_churn:.0%} Chance Customer Is Loyal</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='text-align: center;'>{proba_churn:.0%} Chance Customer Will Churn</p>", unsafe_allow_html=True)
