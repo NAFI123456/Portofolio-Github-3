@@ -37,7 +37,7 @@ slider_estimatedsalary = medium_feat_column.slider('Customer Estimated Salary: '
 
 radio_isactivemember = medium_feat_column.radio('Is Customer An Active Member: ', ['Yes', 'No'])
 
-slider_credit_score = medium_feat_column.slider("Customer's Credit Score: ", min_value=1,max_value=1000)
+slider_credit_score = medium_feat_column.slider("Customer's Credit Score: ", min_value=300,max_value=1000)
 
 selectbox_geography = medium_feat_column.selectbox('Customer Location: ', ['France', 'Spain', 'Germany'])
 
