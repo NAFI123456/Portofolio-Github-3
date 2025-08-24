@@ -4,7 +4,6 @@
 ## Overview
 
 The 3rd portofolio project consist of **deploying a machine learning model** using **streamlit** to predict customer churn probability with real time input.
-vuyvuvvuvuvuvuyvuyvuyvuy.
 
 ----
 
@@ -13,7 +12,6 @@ vuyvuvvuvuvuvuyvuyvuyvuy.
 - Value mapping; value input is different to what is going to be processed by the machine learning.
 - Previewed data input with effortless interpretation skill needed.
 - Visualized dataframe for what is going to be read by machine learning program.
-- 
 
 ----
 
