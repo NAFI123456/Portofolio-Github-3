@@ -94,11 +94,7 @@ data = pd.DataFrame({'Age': [number_input_age],
                      'CreditScore': [slider_credit_score],
                      })
 
-st.markdown(
-    "<h4 style='text-align: center;'>Upcoming Predicted Dataset for Machine Learning</h4>", 
-    unsafe_allow_html=True
-)
-st.table(data.reset_index(drop=True))
+
 
 button = st.button("Predict", use_container_width=True)
 
