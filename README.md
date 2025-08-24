@@ -1,11 +1,11 @@
 # Portofolio-Github-3
 
-----
+---
 ## Overview
 
 The 3rd portofolio project consist of **deploying a machine learning model** using **streamlit** to predict customer churn probability with real time input.
 
-----
+---
 
 ## Notable Features
 - Value input is distinguished by their information representation.
@@ -13,7 +13,7 @@ The 3rd portofolio project consist of **deploying a machine learning model** usi
 - Previewed data input with effortless interpretation skill needed.
 - Visualized dataframe for what is going to be read by machine learning program.
 
-----
+---
 
 ## Requirement, Installation & Running
 
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 streamlit run portofolio_project.py
 ```
 
-----
+---
 
 ## Deployment
 
