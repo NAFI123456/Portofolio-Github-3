@@ -24,7 +24,7 @@ st.set_page_config(layout="wide")
 
 customer_info_column, customer_activity_column, customer_financial_info_column= st.columns(3,border=True)
 
-# High Feature Importance
+# Customer Info Column
 customer_info_column.subheader('Customer Information')
 
 number_input_age = customer_info_column.number_input("Customer's Age: ", min_value=0, max_value=100,value=18 , step=1)
@@ -34,7 +34,7 @@ selectbox_geography = customer_info_column.selectbox('Customer Location: ', ['Fr
 radio_gender = customer_info_column.radio("Customer's Gender : ", ['Male','Female'])
 
 
-# Medium Feature Importance
+# Customer Activity Column
 customer_activity_column.subheader('Customer Activity')
 
 number_input_tenure = customer_activity_column.number_input('Years Since Customer Joined: ', min_value=0, max_value=10)
@@ -46,7 +46,7 @@ radio_isactivemember = customer_activity_column.radio('Is Customer An Active Mem
 radio_hascrcard = customer_activity_column.radio('Does Customer Have Credit Card: ', ['Yes', 'No'])
 
 
-# Low Feaature Importance
+# Customer Financial Info Column
 customer_financial_info_column.subheader('Customer Financial Information')
 
 number_input_balance = customer_financial_info_column.number_input("Customer's Balance: ", min_value=0.0, max_value=500000.0, value=5000.0,step=5000.0)
