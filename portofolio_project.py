@@ -22,38 +22,38 @@ def get_prediction(data:pd.DataFrame):
 
 st.set_page_config(layout="wide")
 
-high_feat_column, medium_feat_column, low_feat_column= st.columns(3,border=True)
+customer_info_column, customer_activity_column, customer_financial_info_column= st.columns(3,border=True)
 
 # High Feature Importance
-high_feat_column.subheader('Customer Information')
+customer_info_column.subheader('Customer Information')
 
-number_input_age = high_feat_column.number_input("Customer's Age: ", min_value=0, max_value=100,value=18 , step=1)
+number_input_age = customer_info_column.number_input("Customer's Age: ", min_value=0, max_value=100,value=18 , step=1)
 
-selectbox_geography = high_feat_column.selectbox('Customer Location: ', ['France', 'Spain', 'Germany'])
+selectbox_geography = customer_info_column.selectbox('Customer Location: ', ['France', 'Spain', 'Germany'])
 
-radio_gender = high_feat_column.radio("Customer's Gender : ", ['Male','Female'])
+radio_gender = customer_info_column.radio("Customer's Gender : ", ['Male','Female'])
 
 
 # Medium Feature Importance
-medium_feat_column.subheader('Customer Activity')
+customer_activity_column.subheader('Customer Activity')
 
-number_input_tenure = medium_feat_column.number_input('Years Since Customer Joined: ', min_value=0, max_value=10)
+number_input_tenure = customer_activity_column.number_input('Years Since Customer Joined: ', min_value=0, max_value=10)
 
-number_input_numofproducts = medium_feat_column.number_input('Number Of Credit Card Products Owned: ', min_value=0, max_value=10)
+number_input_numofproducts = customer_activity_column.number_input('Number Of Credit Card Products Owned: ', min_value=0, max_value=10)
 
-radio_isactivemember = medium_feat_column.radio('Is Customer An Active Member: ', ['Yes', 'No'])
+radio_isactivemember = customer_activity_column.radio('Is Customer An Active Member: ', ['Yes', 'No'])
 
-radio_hascrcard = medium_feat_column.radio('Does Customer Have Credit Card: ', ['Yes', 'No'])
+radio_hascrcard = customer_activity_column.radio('Does Customer Have Credit Card: ', ['Yes', 'No'])
 
 
 # Low Feaature Importance
-low_feat_column.subheader('Customer Financial Information')
+customer_financial_info_column.subheader('Customer Financial Information')
 
-number_input_balance = low_feat_column.number_input("Customer's Balance: ", min_value=0.0, max_value=500000.0, value=5000.0,step=5000.0)
+number_input_balance = customer_financial_info_column.number_input("Customer's Balance: ", min_value=0.0, max_value=500000.0, value=5000.0,step=5000.0)
 
-slider_estimatedsalary = low_feat_column.slider('Customer Estimated Salary: ', min_value=0.0, max_value=250000.0, step=10000.0)
+slider_estimatedsalary = customer_financial_info_column.slider('Customer Estimated Salary: ', min_value=0.0, max_value=250000.0, step=10000.0)
 
-slider_credit_score = low_feat_column.slider("Customer's Credit Score: ", min_value=300,max_value=1000)
+slider_credit_score = customer_financial_info_column.slider("Customer's Credit Score: ", min_value=300,max_value=1000)
 
 value_mapping = {'Yes':1, 'No':0}
 
